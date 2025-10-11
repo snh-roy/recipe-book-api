@@ -110,3 +110,14 @@ def search_recipes():
     
     recipes = query.all()
     return jsonify([recipe.to_dict() for recipe in recipes])
+
+
+@recipes_bp.route('/seed', methods=['POST'])
+def seed_database_endpoint():
+    """Special endpoint to seed the database"""
+    try:
+        from _seed_data import seed_database
+        seed_database()
+        return jsonify({"message": "Database seeded successfully!"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
