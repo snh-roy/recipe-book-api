@@ -8,11 +8,11 @@ app = create_app()
 with app.app_context():
     try:
         db.create_all()
-        # Check if database is empty
         if User.query.count() == 0:
             print("Database is empty, running seed...")
-            from seed_data import seed_database
-            seed_database()
+            # Import renamed module
+            import _seed_data
+            _seed_data.seed_database()
             print("Seed complete!")
     except Exception as e:
         print(f"Database setup: {e}")
