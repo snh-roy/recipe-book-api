@@ -155,7 +155,7 @@ pytest -v
 pytest --cov=. --cov-report=html
 ```
 
-All 16 tests should pass ✅
+All 16 tests should pass.
 
 ## Database Schema
 
@@ -180,7 +180,6 @@ All 16 tests should pass ✅
 
 Sneha Roy - [GitHub](https://github.com/snh-roy) • [LinkedIn](https://www.linkedin.com/in/sneharoym)
 
-)
 
 **Live API:** [web-production-ab0f.up.railway.app](https://web-production-ab0f.up.railway.app/recipes)
 
