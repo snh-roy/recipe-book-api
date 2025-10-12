@@ -2,20 +2,24 @@
 
 A RESTful API for my favorite thing in the world built with Flask and SQLAlchemy. 😋
 
+**🌐 Live Demo:** [https://web-production-ab0f.up.railway.app/recipes](https://web-production-ab0f.up.railway.app/recipes)
+
 ## Features
 
-- Full CRUD operations for recipes and users
-- Advanced search by ingredients and tags
-- Many-to-many relationships (recipes ↔ ingredients, recipes ↔ tags)
-- Comprehensive error handling and input validation
-- 100% test coverage with pytest (16 unit tests)
-- Seed data script with real recipes
+-  Full CRUD operations for recipes and users
+-  Advanced search by ingredients and tags
+-  Many-to-many relationships (recipes ↔ ingredients, recipes ↔ tags)
+-  Comprehensive error handling and input validation
+-  100% test coverage with pytest (16 unit tests)
+-  Seed data with 8 international recipes
+-  Deployed on Railway
 
 ## Tech Stack
 
 - **Backend:** Flask, Python
 - **Database:** SQLite, SQLAlchemy ORM
 - **Testing:** pytest, pytest-flask
+- **Deployment:** Railway
 - **API Testing:** Postman
 
 ## Project Structure
@@ -43,7 +47,7 @@ recipe_book_api/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/recipe-book-api.git
+   git clone https://github.com/snh-roy/recipe-book-api.git
    cd recipe-book-api
    ```
 
@@ -96,9 +100,31 @@ The API will be available at `http://localhost:5001`
 
 ## Example Usage
 
+**Try the live API:**
+
+**Get all recipes:**
+```bash
+curl https://web-production-ab0f.up.railway.app/recipes
+```
+
+**Get a specific recipe:**
+```bash
+curl https://web-production-ab0f.up.railway.app/recipes/1
+```
+
+**Search for Italian recipes:**
+```bash
+curl "https://web-production-ab0f.up.railway.app/recipes/search?tag=italian"
+```
+
+**Search for recipes with chicken:**
+```bash
+curl "https://web-production-ab0f.up.railway.app/recipes/search?ingredient=chicken"
+```
+
 **Create a new recipe:**
 ```bash
-curl -X POST http://localhost:5001/recipes \
+curl -X POST https://web-production-ab0f.up.railway.app/recipes \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Grilled Cheese",
@@ -116,7 +142,7 @@ curl -X POST http://localhost:5001/recipes \
 
 **Search for vegetarian recipes:**
 ```bash
-curl "http://localhost:5001/recipes/search?tag=vegetarian"
+curl "https://web-production-ab0f.up.railway.app/recipes/search?tag=vegetarian"
 ```
 
 ## Running Tests
@@ -152,8 +178,11 @@ All 16 tests should pass ✅
 
 ## Author
 
-Your Name - [Sneha Roy](www.linkedin.com/in/sneharoym)
+Sneha Roy - [GitHub](https://github.com/snh-roy) • [LinkedIn](https://www.linkedin.com/in/sneharoym)
 
+)
+
+**Live API:** [web-production-ab0f.up.railway.app](https://web-production-ab0f.up.railway.app/recipes)
 
 ## License
 
