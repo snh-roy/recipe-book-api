@@ -2,7 +2,7 @@
 
 A RESTful API for my favorite thing in the world built with Flask and SQLAlchemy. 😋
 
-**🌐 Live Demo:** [https://web-production-ab0f.up.railway.app/recipes](https://web-production-ab0f.up.railway.app/recipes)
+**Live :** [https://web-production-ab0f.up.railway.app/recipes](https://web-production-ab0f.up.railway.app/recipes)
 
 ## Features
 
@@ -165,16 +165,6 @@ All 16 tests should pass.
 - **RecipeIngredient** - Junction table with quantities
 - **Tag** - Stores recipe tags
 - **recipe_tags** - Many-to-many relationship table
-
-## Future Enhancements
-
-- [ ] User authentication with JWT tokens
-- [ ] Recipe ratings and reviews
-- [ ] Image upload for recipes
-- [ ] Nutritional information
-- [ ] Meal planning feature
-- [ ] Shopping list generator
-- [ ] Pagination for large result sets
 
 ## Author
 
