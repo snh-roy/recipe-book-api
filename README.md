@@ -170,9 +170,6 @@ All 16 tests should pass.
 
 Sneha Roy - [GitHub](https://github.com/snh-roy) • [LinkedIn](https://www.linkedin.com/in/sneharoym)
 
-
-**Live API:** [web-production-ab0f.up.railway.app](https://web-production-ab0f.up.railway.app/recipes)
-
 ## License
 
 This project is open source and available under the MIT License.
